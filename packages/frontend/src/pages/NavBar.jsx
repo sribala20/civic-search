@@ -8,12 +8,16 @@ function NavBar() {
           <h3>Search</h3>
         </a>
 
+        <a style={{ marginLeft: "100px" }} href="/upload" className="navbar-brand">
+          <h3>Upload</h3>
+        </a>
+
         <a
           target="_blank"
           href="https://opengov.slocity.org/WebLink/browse.aspx?cr=1"
           className="navbar-brand"
         >
-          <img src={logo} style={{ width: "20%" }} alt="SLO Logo" />
+          <img src={logo} style={{width: "20%" }} alt="SLO Logo" />
         </a>
       </nav>
     </div>

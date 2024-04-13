@@ -31,13 +31,15 @@ function AdvSearch() {
           <input type="text" className="w-75 form-control" />
         </div>
 
-        <button
-          style={{ width: "300px" }}
-          type="button"
-          class="btn btn-primary"
-        >
-          Search
-        </button>
+        <a href="/results">
+          <button
+            style={{ width: "200px" }}
+            type="button"
+            class="btn btn-primary"
+          >
+            Search
+          </button>
+        </a>
       </div>
     </>
   );

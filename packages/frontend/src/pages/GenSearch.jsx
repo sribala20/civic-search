@@ -24,14 +24,17 @@ function GenSearch() {
           style={{ marginBottom: "20px" }}
         ></textarea>
 
+        <a href="/results">
         <button
-          style={{ width: "300px" }}
+          style={{ width: "200px" }}
           type="button"
           class="btn btn-primary"
         >
           Search
         </button>
+        </a>
       </div>
+      
     </>
   );
 }
