@@ -4,8 +4,12 @@ function NavBar() {
   return (
     <div>
       <nav class="navbar navbar-light bg-light">
-        <a style={{ marginLeft: "200px" }} href="/" className="navbar-brand">
+        <a style={{ marginLeft: "100px" }} href="/" className="navbar-brand">
           <h3>Search</h3>
+        </a>
+
+        <a href="/train" className="navbar-brand">
+          <h3>Train</h3>
         </a>
 
         <a
