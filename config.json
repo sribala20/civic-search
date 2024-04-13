@@ -1,0 +1,1304 @@
+{
+    "templates": {
+      "CityCouncilMinutes": {
+        "folder_id": "171497", 
+        "template": {
+            "doctype": "CityCouncilMinutes",
+            "Attributes": {
+              "CouncilMembersPresent": [],
+              "CityStaffPresent": [],
+              "Date": "Month d, yyyy",
+              "Time": "",
+              "Location": "",
+              "CallToOrder": {
+                "Description": ""
+              },
+              "PledgeOfAllegiance": {
+                "LedBy": ""
+              },
+              "CityAttorneyReport": {
+                "Description": "",
+                "LedBy": ""
+              },
+              "Presentations": [
+                {
+                  "Description": "",
+                  "DeliveredBy": ""
+                }
+              ],
+              "CityManagerReport": {
+                "Description": "",
+                "DeliveredBy": ""
+              },
+              "PublicCommentPeriod": {
+                "Comments": [
+                  {
+                    "Name": "",
+                    "Comment": ""
+                  }
+                ]
+              },
+              "ConsentAgenda": {
+                "ItemsPulled": [],
+                "PublicComments": [
+                  {
+                    "RegardingItem": "",
+                    "Name": "",
+                    "Comment": ""
+                  }
+                ],
+                "Items": [
+                  {
+                    "ItemNumber": "",
+                    "SubItems": [
+                      {
+                        "Description": ""
+                      }
+                    ],
+                    "Title": "",
+                    "Description": "",
+                    "MotionBy": "",
+                    "SecondBy": "",
+                    "Ayes": [],
+                    "Noes": [],
+                    "Abstentions": [],
+                    "Recusals": [],
+                    "Carried": "",
+                    "Failed": ""
+                  }
+                ]
+              },
+              "PublicHearingsAndBusinessItems": [
+                {
+                  "Title": "",
+                  "Public Comments": "",
+                  "Recommendation": "",
+                  "MotionBy": "",
+                  "SecondBy": "",
+                  "Body": "",
+                  "SubItems": [
+                    {
+                      "Description": ""
+                    }
+                  ]
+                }
+              ],
+              "StudySessions": [
+                {
+                  "Description": "",
+                  "Recommendations": []
+                }
+              ],
+              "LiaisonReportsAndCommunications": [
+                {
+                  "Description": ""
+                }
+              ],
+              "Adjournment": {
+                "Description": ""
+              }
+            }
+          }
+      },
+      "TreeCommitteeMinutes": {
+        "folder_id": "171496",
+        "template": {
+            "doctype": "TreeCommiteeMinutes",
+            "Attributes": {
+              "MembersPresent": [], 
+              "MembersAbsent": [],
+              "CityStaffPresent": [],
+              "Date": "Month d, yyyy",
+              "Time": "",
+              "Location": "",
+              "CallToOrder": {
+                "Description": ""
+              },
+              "OathOfOffice": {
+                "AdministeredBy": "",
+                "Name": "",
+                "TermStart": "" 
+              },
+              "PublicComments": [
+                {
+                  "Name": "",
+                  "Comment": ""
+                }
+              ],
+              "ConsentItems": [
+                {
+                  "MotionBy": "",
+                  "SecondBy": "", 
+                  "Description": "",
+                  "Summary": "",  
+                  "Ayes": [],
+                  "Noes": [],
+                  "Abstentions": [],   
+                  "Recusals": [],  
+                  "Carried": "",
+                  "Failed": ""
+                }
+              ],
+              "TreeRemovalApplications": [
+                {
+                  "Address": "",
+                  "MotionBy": "", 
+                  "SecondBy": "",
+                  "Recommendations": [],
+                  "Ayes": [],
+                  "Noes": [],
+                  "Abstentions": [],
+                  "Recusals": [],
+                  "Carried": "",
+                  "Failed": ""
+                }
+              ],
+              "NewBusinessItems": [
+                {
+                  "Description": "",
+                  "Recommendations": []  
+                }
+              ],
+              "InformationalUpdates": [
+                {
+                  "Description": "",
+                  "Recommendations": []
+                }
+              ],
+              "ArboristReport": {
+                "Updates": []
+              },
+              "Adjournment": {
+                "Description": ""
+              }
+            }
+        }
+      },
+      "CitizenCorrespondence": {  
+        "folder_id": "173124",
+        "template": {
+          "doctype": "CitizenCorrespondence",
+          "Attributes": {
+            "Name": "",
+            "ItemNumber": "",
+            "Summary": "",
+            "CitizenSentiment": "", 
+            "InSupport": "",
+            "Against": "",
+            "NoStance": "",
+            "DateSent": "Month d, yyyy",
+            "SpecificConcernsRaised": "",
+            "SuggestedAlternatives": "" 
+          }
+        }
+      },
+      "ActiveTransportationCommitteeMinutes": {
+        "folder_id": "171447",
+        "template": {
+         "doctype": "ActiveTransportationCommitteeMinutes",
+        "Attributes": {
+          "CommitteeMembersPresent": [],
+          "CityStaffPresent": [],
+          "OthersPresent": [],
+          "Date": "Month d, yyyy",
+          "Time": "",
+          "Location": "",
+          "CallToOrder": {
+            "Description": ""
+          },
+          "PublicCommentPeriod": {
+            "Comments": [
+              {
+                "Name": "",
+                "Comment": ""
+              }
+            ]
+          },
+          "ApprovalOfMinutes": {
+            "MinutesDate": "Month d, yyyy",
+            "MotionBy": "", 
+            "SecondBy": "",
+            "Vote": ""
+          },
+          "OathOfOffice": {
+            "Name": ""
+          }, 
+          "BusinessItems": [
+            {
+              "Title": "",
+              "Description": "",
+              "PublicComments": [], 
+              "Motions": [
+                {
+                  "Description": "",
+                  "MotionBy": "",
+                  "SecondBy": "",
+                  "Vote": "" 
+                }
+              ]
+            }
+          ],
+          "ProjectUpdates": {
+            "Title": "",
+            "Description": ""
+          },
+          "ElectionOfOfficers": {
+            "Positions": [
+              {
+                "Title": "",
+                "Nominee": "",
+                "MotionBy": "",
+                "SecondBy": "",
+                "Vote": ""
+              }
+            ]
+          },
+          "Adjournment": { 
+            "Description": ""
+          }
+        }
+      }
+    },
+    "ArchitecturalReviewCommissionCommitteeMinutes": {
+      "folder_id": "171443",
+      "template": {
+        "doctype": "ArchitecturalReviewCommissionCommitteeMinutes",
+        "Attributes": {
+          "CommitteeMembersPresent": [],
+          "CommitteeMembersAbsent": [], 
+          "CityStaffPresent": [],
+          "Date": "Month d, yyyy",
+          "Time": "",
+          "Location": "",
+          "CallToOrder": {
+            "Description": ""
+          },
+          "PublicCommentPeriod": {
+            "Comments": [
+              {
+                "Name": "",
+                "Comment": ""
+              }
+            ]
+          },
+          "ConsentAgenda": {
+              "ItemsPulled": [],
+              "PublicComments": [
+                {
+                  "RegardingItem": "",
+                  "Name": "",
+                  "Comment": ""
+                }
+              ],
+              "Items": [
+                {
+                  "ItemNumber": "",
+                  "Title": "",
+                  "Description": "",
+                  "MotionBy": "",
+                  "SecondBy": "",
+                  "Ayes": [],
+                  "Noes": [],
+                  "Abstentions": [],
+                  "Recusals": [],
+                  "Carried": "",
+                  "Failed": ""
+                }
+              ]
+            },
+            "PublicHearingsAndBusinessItems": [
+              {
+                "Title": "",
+                "Description": "",
+                "Public Comments": "",
+                "Recommendation": "",
+                "MotionBy": "",
+                "SecondBy": ""
+              }
+            ],
+          "CommentAndDiscussion": [
+              {
+              "Title": "",
+              "Item Number": "",
+              "Description": ""     
+              }
+          ],
+          "Adjournment": {
+            "Description": ""
+          }
+        }
+      }
+    },
+    "AdministrativeReviewBoardMinutes": {
+      "folder_id": "135779",
+      "template": {
+        "doctype": "AdministrativeReviewBoardMinutes",
+        "Attributes": {
+          "BoardMembersPresent": [],
+          "BoardMembersAbsent": [], 
+          "CityStaffPresent": [],
+          "Date": "Month d, yyyy",
+          "Time": "",
+          "Location": "",
+          "CallToOrder": {
+            "Description": "",
+            "Action": ""
+          },
+          "PublicCommentPeriod": {
+            "Comments": [
+              {
+                "Name": "",
+                "Comment": ""
+              }
+            ]
+          },
+          "ApprovalOfMinutes": {
+              "Description": ""
+          },
+          "BusinessItems": [
+              {
+                "Title": "",
+                "Description": "",
+                "Public Comments": "",
+                "Recommendation": "",
+                "Action": "",
+                "MotionBy": "",
+                "SecondBy": ""
+              }
+            ],
+          "Adjournment": {
+            "Description": ""
+          }
+        }
+      }
+    },
+    "Citizens'RevenueEnchancementOversightCommissionMinutes": {
+      "folder_id": "171452", 
+      "template": {
+          "doctype": "RevenueEnchancementOversightCommissionMinutes",
+          "Attributes": {
+            "REOCComissionersPresent": [],
+            "REOCComissionersAbsent": [],
+            "CityStaffPresent": [],
+            "CouncilPresent": [],
+            "Date": "Month d, yyyy",
+            "Time": "",
+            "Location": "",
+            "CallToOrder": {
+              "Description": ""
+            },
+            "PublicCommentPeriod": {
+              "Comments": [
+                {
+                  "Name": "",
+                  "Comment": ""
+                }
+              ]
+            },
+            "ConsentAgenda": {
+              "ItemsPulled": [],
+              "PublicComments": [
+                {
+                  "RegardingItem": "",
+                  "Name": "",
+                  "Comment": ""
+                }
+              ],
+              "Items": [
+                {
+                  "ItemNumber": "",
+                  "Title": "",
+                  "Description": "",
+                  "MotionBy": "",
+                  "SecondBy": "",
+                  "Ayes": [],
+                  "Noes": [],
+                  "Abstentions": [],
+                  "Recusals": [],
+                  "Carried": "",
+                  "Failed": ""
+                }
+              ]
+            },
+            "PublicHearingsAndBusinessItems": [
+              {
+                "Title": "",
+                "Description": "",
+                "Public Comments": "",
+                "Recommendation": "",
+                "MotionBy": "",
+                "SecondBy": ""
+              }
+            ],
+            "StudySessions": [
+              {
+                "Description": "",
+                "PublicComments": "",
+                "Recommendations": []
+              }
+            ],
+            "StaffandCommissionerAnnouncements": [
+              {
+                "Title": "",
+                "Description": ""
+              }
+            ],
+            "Adjournment": {
+              "Description": ""
+            }
+          }
+        }
+    },
+    "CulturalHeritageCommitteeMinutes": {
+      "folder_id": "171456", 
+      "template": {
+          "doctype": "CulturalHeritageCommitteeMinutes",
+          "Attributes": {
+            "CulturalHeritageCommitteeMembersPresent": [],
+            "CulturalHeritageCommitteeMembersAbsent": [],
+            "CityStaffPresent": [],
+            "Date": "Month d, yyyy",
+            "Time": "",
+            "Location": "",
+            "CallToOrder": {
+              "Description": ""
+            },
+            "Presentations": [
+              {
+                "Description": "",
+                "DeliveredBy": ""
+              }
+            ],
+            "PublicCommentPeriod": {
+              "Comments": [
+                {
+                  "Name": "",
+                  "Comment": ""
+                }
+              ]
+            },
+            "ConsentAgenda": {
+              "ItemsPulled": [],
+              "PublicComments": [
+                {
+                  "RegardingItem": "",
+                  "Name": "",
+                  "Comment": ""
+                }
+              ],
+              "Items": [
+                {
+                  "ItemNumber": "",
+                  "Title": "",
+                  "Description": "",
+                  "MotionBy": "",
+                  "SecondBy": "",
+                  "Ayes": [],
+                  "Noes": [],
+                  "Abstentions": [],
+                  "Recusals": [],
+                  "Carried": "",
+                  "Failed": ""
+                }
+              ]
+            },
+            "PublicHearingsAndBusinessItems": [
+              {
+                "Title": "",
+                "Description": "",
+                "Public Comments": "",
+                "Recommendation": "",
+                "MotionBy": "",
+                "SecondBy": ""
+              }
+            ],
+            "CommentandDiscussion": [
+              {
+                "Description": "",
+                "Recommendations": []
+              }
+            ],
+            "Adjournment": {
+              "Description": ""
+            }
+          }
+        }
+    }, 
+    "HumanRelationsCommitteeMinutes": {
+      "folder_id": "171722", 
+      "template": {
+          "doctype": "HumanRelationsCommitteeMinutes",
+          "Attributes": {
+            "HumanRelationsCommissionersPresent": [],
+            "HumanRelationsCommissionersAbsent": [],
+            "CityStaffPresent": [],
+            "Date": "Month d, yyyy",
+            "Time": "",
+            "Location": "",
+            "CallToOrder": {
+              "Description": ""
+            },
+            "Presentations": [
+              {
+                "Description": "",
+                "DeliveredBy": ""
+              }
+            ],
+            "PublicCommentPeriod": {
+              "Comments": [
+                {
+                  "Name": "",
+                  "Comment": ""
+                }
+              ]
+            },
+            "ConsentAgenda": {
+              "ItemsPulled": [],
+              "PublicComments": [
+                {
+                  "RegardingItem": "",
+                  "Name": "",
+                  "Comment": ""
+                }
+              ],
+              "Items": [
+                {
+                  "ItemNumber": "",
+                  "Title": "",
+                  "Description": "",
+                  "MotionBy": "",
+                  "SecondBy": "",
+                  "Ayes": [],
+                  "Noes": [],
+                  "Abstentions": [],
+                  "Recusals": [],
+                  "Carried": "",
+                  "Failed": ""
+                }
+              ]
+            },
+            "PublicHearingsAndBusinessItems": [
+              {
+                "Title": "",
+                "Description": "",
+                "Public Comments": "",
+                "Recommendation": "",
+                "MotionBy": "",
+                "SecondBy": ""
+              }
+            ],
+            "CommentandDiscussion": [
+              {
+                "Description": "",
+                "Recommendations": []
+              }
+            ],
+            "Adjournment": {
+              "Description": ""
+            }
+          }
+        }
+    }, 
+    "PlanningCommissionMinutes": {
+      "folder_id": "171483", 
+      "template": {
+          "doctype": "PlanningCommissionMinutes",
+          "Attributes": {
+            "PlanningCommissionersPresent": [],
+            "PlanningCommissionersAbsent": [],
+            "CityStaffPresent": [],
+            "Date": "Month d, yyyy",
+            "Time": "",
+            "Location": "",
+            "CallToOrder": {
+              "Description": ""
+            },
+            "Presentations": [
+              {
+                "Description": "",
+                "DeliveredBy": ""
+              }
+            ],
+            "PublicCommentPeriod": {
+              "Comments": [
+                {
+                  "Name": "",
+                  "Comment": ""
+                }
+              ]
+            },
+            "ConsentAgenda": {
+              "ItemsPulled": [],
+              "PublicComments": [
+                {
+                  "RegardingItem": "",
+                  "Name": "",
+                  "Comment": ""
+                }
+              ],
+              "Items": [
+                {
+                  "ItemNumber": "",
+                  "Title": "",
+                  "Description": "",
+                  "MotionBy": "",
+                  "SecondBy": "",
+                  "Ayes": [],
+                  "Noes": [],
+                  "Abstentions": [],
+                  "Recusals": [],
+                  "Carried": "",
+                  "Failed": ""
+                }
+              ]
+            },
+            "PublicHearingsAndBusinessItems": [
+              {
+                "Title": "",
+                "Description": "",
+                "Public Comments": "",
+                "Recommendations": [],
+                "MotionBy": "",
+                "SecondBy": "",
+                "SubItems": {
+                  "Description": ""
+                },
+                "Ayes": [],
+                "Noes": []
+              }
+            ],
+            "CommentandDiscussion": [
+              {
+                "Description": "",
+                "Recommendations": []
+              }
+            ],
+            "Adjournment": {
+              "Description": ""
+            }
+          }
+        }
+    },
+    "PromotionalCoordinatingCommitteeMinutes": {
+      "folder_id": "171488", 
+      "template": {
+          "doctype": "PromotionalCoordinatingCommitteeMinutes",
+          "Attributes": {
+            "PromotionalCoordinatingCommitteePresent": [],
+            "PromotionalCoordinatingCommitteeAbsent": [],
+            "CityStaffPresent": [],
+            "Date": "Month d, yyyy",
+            "Time": "",
+            "Location": "",
+            "CallToOrder": {
+              "Description": ""
+            },
+            "Presentations": [
+              {
+                "Description": "",
+                "DeliveredBy": ""
+              }
+            ],
+            "PublicCommentPeriod": {
+              "Comments": [
+                {
+                  "Name": "",
+                  "Comment": ""
+                }
+              ]
+            },
+            "ConsentAgenda": {
+              "ItemsPulled": [],
+              "PublicComments": [
+                {
+                  "RegardingItem": "",
+                  "Name": "",
+                  "Comment": ""
+                }
+              ],
+              "Items": [
+                {
+                  "ItemNumber": "",
+                  "Title": "",
+                  "Description": "",
+                  "MotionBy": "",
+                  "SecondBy": "",
+                  "Ayes": [],
+                  "Noes": [],
+                  "Abstentions": [],
+                  "Recusals": [],
+                  "Carried": "",
+                  "Failed": ""
+                }
+              ]
+            },
+            "PublicHearingsAndBusinessItems": [
+              {
+                "Title": "",
+                "Description": "",
+                "Public Comments": "",
+                "Recommendation": "",
+                "MotionBy": "",
+                "SecondBy": ""
+              }
+            ],
+            "LiaisonReportsAndCommunications": [
+              {
+                "Description": ""
+              }
+            ],
+            "Adjournment": {
+              "Description": ""
+            }
+          }
+        }
+    },
+    "TourismBusinessImprovementDistrictBoardMinutes": {
+      "folder_id": "171492", 
+      "template": {
+          "doctype": "TourismBusinessImprovementDistrictBoardMinutes",
+          "Attributes": {
+            "TourismBusinessImprovementDistrictBoardPresent": [],
+            "TourismBusinessImprovementDistrictBoardAbsent": [],
+            "CityStaffPresent": [],
+            "Date": "Month d, yyyy",
+            "Time": "",
+            "Location": "",
+            "CallToOrder": {
+              "Description": ""
+            },
+            "Presentations": [
+              {
+                "Description": "",
+                "DeliveredBy": ""
+              }
+            ],
+            "PublicCommentPeriod": {
+              "Comments": [
+                {
+                  "Name": "",
+                  "Comment": ""
+                }
+              ]
+            },
+            "ConsentAgenda": {
+              "ItemsPulled": [],
+              "PublicComments": [
+                {
+                  "RegardingItem": "",
+                  "Name": "",
+                  "Comment": ""
+                }
+              ],
+              "Items": [
+                {
+                  "ItemNumber": "",
+                  "Title": "",
+                  "Description": "",
+                  "MotionBy": "",
+                  "SecondBy": "",
+                  "Ayes": [],
+                  "Noes": [],
+                  "Abstentions": [],
+                  "Recusals": [],
+                  "Carried": "",
+                  "Failed": ""
+                }
+              ]
+            },
+            "PublicHearingsAndBusinessItems": [
+              {
+                "Title": "",
+                "Description": "",
+                "Public Comments": "",
+                "Recommendation": "",
+                "MotionBy": "",
+                "SecondBy": ""
+              }
+            ],
+            "LiaisonReportsAndCommunications": [
+              {
+                "Description": ""
+              }
+            ],
+            "Adjournment": {
+              "Description": ""
+            }
+          }
+        }
+    },
+    "ConstructionBoardofAppealsMinutes": {
+      "folder_id": "176857", 
+      "template": {
+      "doctype": "ConstructionBoardofAppealsMinutes",
+      "Attributes": {
+        "MembersPresent": [],
+        "MembersAbsent": [],
+        "CityStaffPresent": [],
+        "Date": "Month d, yyyy",
+        "Time": "",
+        "Location": "",
+        "CallToOrder": {
+          "Description": ""
+        },
+        "Presentations": [
+          {
+            "Description": "",
+            "DeliveredBy": ""
+          }
+        ],
+        "PublicCommentPeriod": {
+          "Comments": [
+            {
+              "Name": "",
+              "Comment": ""
+            }
+          ]
+        },
+        "ApprovalOfMinutes": {
+          "Description": "",
+          "Action": "",
+          "PublicComment": ""
+        },
+        "ConsentAgenda": {
+          "ItemsPulled": [],
+          "PublicComments": [
+            {
+              "RegardingItem": "",
+              "Name": "",
+              "Comment": ""
+            }
+          ],
+          "Items": [
+            {
+              "ItemNumber": "",
+              "Title": "",
+              "Description": "",
+              "MotionBy": "",
+              "SecondBy": "",
+              "Ayes": [],
+              "Noes": [],
+              "Abstentions": [],
+              "Recusals": [],
+              "Carried": "",
+              "Failed": ""
+            }
+          ]
+        },
+        "PublicHearings": [
+          {
+            "Title": "",
+            "Description": "",
+            "Public Comments": "",
+            "Recommendation": "",
+            "MotionBy": "",
+            "SecondBy": ""
+          }
+        ],
+        "BusinessItems": [
+          {
+            "Title": "",
+            "Description": "",
+            "Public Comments": "",
+            "Recommendation": "",
+            "MotionBy": "",
+            "SecondBy": ""
+          }
+        ],
+        "CommentandDiscussion": [
+          {
+            "Description": "",
+            "Recommendations": []
+          }
+        ],
+        "Adjournment": {
+          "Description": ""
+        }
+      }
+    }
+    },
+    "CouncilCompensationCommitteeMinutes": {
+      "folder_id": "102022", 
+      "template": {
+          "doctype": "CouncilCompensationCommitteeMinutes",
+          "Attributes": {
+            "MembersPresent": [],
+            "MembersAbsent": [],
+            "CityStaffPresent": [],
+            "Date": "Month d, yyyy",
+            "Time": "",
+            "Location": "",
+            "CallToOrder": {
+              "Description": ""
+            },
+            "PublicCommentPeriod": {
+              "Comments": [
+                {
+                  "Name": "",
+                  "Comment": ""
+                }
+              ]
+            },
+            "ApprovalOfMinutes": {
+              "Description": "",
+              "Action": "",
+              "PublicComment": ""
+            },
+            "Items": [
+              {
+                "Title": "",
+                "Action": "",
+                "Description": "",
+                "MotionBy": "",
+                "SecondBy": "",
+                "Ayes": [],
+                "Noes": [],
+                "Abstentions": [],
+                "Recusals": [],
+                "Carried": "",
+                "Failed": ""
+              }
+                ]
+            },
+            "PublicHearings": [
+              {
+                "Title": "",
+                "Description": "",
+                "Public Comments": "",
+                "Recommendation": "",
+                "MotionBy": "",
+                "SecondBy": ""
+              }
+            ],
+            "BusinessItems": [
+              {
+                "Title": "",
+                "Description": "",
+                "Public Comments": "",
+                "Recommendation": "",
+                "MotionBy": "",
+                "SecondBy": ""
+              }
+            ],
+            "CommentandDiscussion": [
+              {
+                "Description": "",
+                "Recommendations": []
+              }
+            ],
+            "Adjournment": {
+              "Description": ""
+            }
+          }
+        },
+      "InvestmentOversightCommitteeMinutes": {
+        "folder_id": "171467", 
+        "template": {
+            "doctype": "CouncilCompensationCommitteeMinutes",
+            "Attributes": {
+              "MembersPresent": [],
+              "MembersAbsent": [],
+              "CityStaffPresent": [],
+              "Date": "Month d, yyyy",
+              "Time": "",
+              "Location": "",
+              "CallToOrder": {
+                "Description": ""
+              },
+              "PublicCommentPeriod": {
+                "Comments": [
+                  {
+                    "Name": "",
+                    "Comment": ""
+                  }
+                ]
+              },
+              "ApprovalOfMinutes": {
+                "Title": "",
+                "Description": "",
+                "MotionBy": "",
+                "SecondBy": "",
+                "Carried": "",
+                "Failed": ""
+              },
+              "PublicHearings": [
+                {
+                  "Title": "",
+                  "Description": "",
+                  "Public Comments": "",
+                  "Recommendation": "",
+                  "MotionBy": "",
+                  "SecondBy": ""
+                }
+              ],
+              "BusinessItems": [
+                {
+                  "Title": "",
+                  "Description": "",
+                  "Public Comments": "",
+                  "Recommendation": "",
+                  "MotionBy": "",
+                  "SecondBy": "",
+                  "Carried": "",
+                  "Failed": ""
+                }
+              ],
+              "CommentandDiscussion": [
+                {
+                  "Description": "",
+                  "Recommendations": []
+                }
+              ],
+              "Adjournment": {
+                "Description": ""
+              }
+            }
+        }
+    },
+    "JackHouseCommitteeMinutes": {
+      "folder_id": "135825", 
+      "template": {
+          "doctype": "JackHouseCommitteeMinutes",
+          "Attributes": {
+            "MembersPresent": [],
+            "MembersAbsent": [],
+            "CityStaffPresent": [],
+            "Date": "Month d, yyyy",
+            "Time": "",
+            "Location": "",
+            "CallToOrder": {
+              "Description": ""
+            },
+            "PublicCommentPeriod": {
+              "Comments": [
+                {
+                  "Name": "",
+                  "Comment": ""
+                }
+              ]
+            },
+            "ApprovalOfMinutesandFinancialReports": {
+              "Title": "",
+              "Description": "",
+              "MotionBy": "",
+              "SecondBy": "",
+              "Carried": "",
+              "Failed": ""
+            },
+            "PresentationandDiscussion": [
+              {
+                "Title": "",
+                "Description": "",
+                "Public Comments": "",
+                "Recommendation": ""
+              }
+            ],
+            "PublicHearingsBusinessItems": [
+              {
+                "Title": "",
+                "Description": "",
+                "Public Comments": "",
+                "Recommendation": "",
+                "MotionBy": "",
+                "SecondBy": "",
+                "Carried": "",
+                "Failed": ""
+              }
+            ],
+            "CommentandDiscussion": [
+              {
+                "Description": "",
+                "Recommendations": []
+              }
+            ],
+            "Adjournment": {
+              "Description": ""
+            }
+          }
+      }
+  },
+  "MassTransportationCommitteeMinutes": {
+    "folder_id": "171472", 
+    "template": {
+        "doctype": "MassTransportationCommitteeMinutes",
+        "Attributes": {
+          "MembersPresent": [],
+          "MembersAbsent": [],
+          "CityStaffPresent": [],
+          "Date": "Month d, yyyy",
+          "Time": "",
+          "Location": "",
+          "CallToOrder": {
+            "Description": ""
+          },
+          "PublicCommentPeriod": {
+            "Comments": [
+              {
+                "Name": "",
+                "Comment": ""
+              }
+            ]
+          },
+          "ApprovalOfMinutes": {
+            "Title": "",
+            "Description": "",
+            "MotionBy": "",
+            "SecondBy": "",
+            "Carried": "",
+            "Failed": ""
+          },
+          "Presentations": [
+            {
+              "Description": "",
+              "DeliveredBy": ""
+            }
+          ],
+          "CommentandDiscussion": [
+            {
+              "Description": "",
+              "Recommendations": []
+            }
+          ],
+          "Adjournment": {
+            "Description": ""
+          }
+        }
+      }
+    },
+    "ParksandRecreationCommissionMinutes": {
+      "folder_id": "171480", 
+      "template": {
+          "doctype": "ParksandRecreationCommissionMinutes",
+          "Attributes": {
+            "CouncilMembersPresent": [],
+            "CouncilMembersAbsent": [],
+            "CityStaffPresent": [],
+            "Date": "Month d, yyyy",
+            "Time": "",
+            "Location": "",
+            "CallToOrder": {
+              "Description": ""
+            },
+            "Presentations": [
+              {
+                "Description": "",
+                "DeliveredBy": ""
+              }
+            ],
+            "PublicCommentPeriod": {
+              "Comments": [
+                {
+                  "Name": "",
+                  "Comment": ""
+                }
+              ]
+            },
+            "ApprovalOfMinutes": {
+              "Description": "",
+              "Action": "",
+              "PublicComment": ""
+            },
+            "ConsentAgenda": {
+              "ItemsPulled": [],
+              "PublicComments": [
+                {
+                  "RegardingItem": "",
+                  "Name": "",
+                  "Comment": ""
+                }
+              ],
+              "Items": [
+                {
+                  "ItemNumber": "",
+                  "Title": "",
+                  "Description": "",
+                  "MotionBy": "",
+                  "SecondBy": "",
+                  "Ayes": [],
+                  "Noes": [],
+                  "Abstentions": [],
+                  "Recusals": [],
+                  "Carried": "",
+                  "Failed": ""
+                }
+              ]
+            },
+            "PublicHearingsAndBusinessItems": [
+              {
+                "Title": "",
+                "Description": "",
+                "Public Comments": "",
+                "Recommendation": "",
+                "MotionBy": "",
+                "SecondBy": ""
+              }
+            ],
+            "LiaisonReportsAndCommunications": [
+              {
+                "Description": ""
+              }
+            ],
+            "Adjournment": {
+              "Description": ""
+            }
+          }
+        }
+    },
+    "PersonnelBoardMinutes": {
+      "folder_id": "171540", 
+      "template": {
+          "doctype": "PersonnelBoardMinutes",
+          "Attributes": {
+            "MembersPresent": [],
+            "MembersAbsent": [],
+            "CityStaffPresent": [],
+            "Date": "Month d, yyyy",
+            "Time": "",
+            "Location": "",
+            "CallToOrder": {
+              "Description": ""
+            },
+            "Presentations": [
+              {
+                "Description": "",
+                "DeliveredBy": ""
+              }
+            ],
+            "PublicCommentPeriod": {
+              "Comments": [
+                {
+                  "Name": "",
+                  "Comment": ""
+                }
+              ]
+            },
+            "ApprovalOfMinutes": {
+              "Description": "",
+              "Action": "",
+              "Carried": "",
+              "PublicComment": ""
+            },
+            "PublicHearingsAndBusinessItems": [
+              {
+                "Title": "",
+                "SubItems": [
+                  {
+                  "Description": ""
+                  }
+              ],
+                "Description": "",
+                "Public Comments": "",
+                "Recommendation": "",
+                "MotionBy": "",
+                "SecondBy": ""
+              }
+            ],
+            "Adjournment": {
+              "Description": ""
+            }
+          }
+        }
+    }
+  }
+    
+  }
