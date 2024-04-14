@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { useAuth } from "../AuthContext";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
@@ -68,9 +67,6 @@ const LoginPage = () => {
                 Login
               </button>
             </form>
-            <p>
-              Don't have an account? <Link to="/register">Register</Link>
-            </p>
           </div>
         </div>
       </div>
