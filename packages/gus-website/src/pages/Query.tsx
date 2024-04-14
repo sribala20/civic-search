@@ -5,13 +5,25 @@ import "../styles.css";
 
 const Query = () => {
   const [query, setQuery] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
 
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    // Process the query with an LLM
-    console.log("Query:", query);
-    // Reset the query state after processing
-    setQuery("");
+  const handleSearch = () => {
+    fetch("http://localhost:8000/retrieve", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        text: query,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        setSearchResults(data);
+      })
+      .catch((error) => {
+        console.log(JSON.stringify(error));
+      });
   };
 
   return (
@@ -21,7 +33,6 @@ const Query = () => {
         <div className="query-page">
           <h1>General Information Request</h1>
           <div className="form-container">
-            <form onSubmit={handleSubmit}>
               <div className="input-group">
                 <textarea
                   placeholder="Enter your request here..."
@@ -29,11 +40,19 @@ const Query = () => {
                   onChange={(e) => setQuery(e.target.value)}
                 ></textarea>
               </div>
-              <button type="submit">Submit Request</button>
-            </form>
+              <button onClick={handleSearch}>Submit Request</button>
           </div>
         </div>
       </div>
+      <div style={{ marginTop: "20px" }}>
+            {searchResults &&
+              searchResults.map((result, index) => (
+                <div key={index} style={{ marginBottom: "10px", whiteSpace: "pre-wrap" }}>
+                  <p>{result}</p>
+                  <hr />
+                </div>
+              ))}
+          </div>
       <Footer />
     </div>
   );

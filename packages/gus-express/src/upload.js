@@ -16,39 +16,11 @@ const credentials = {
   secretAccessKey: process.env.SECRET_ACCESS_KEY,
 };
 
-const getObject = async (bucket: string, key: string) => {
+const putObject = async (bucket, file, key) => {
   const s3Client = new S3Client({
     endpoint: "https://s3.dualstack.us-east-1.amazonaws.com",
     forcePathStyle: false,
-    region: "us-east-1",
-    credentials,
-  });
-
-  const params = {
-    Bucket: bucket,
-    Key: key,
-  };
-
-  return new Promise((resolve, reject) => {
-    s3Client
-      .send(new GetObjectCommand(params))
-      .then((data) => {
-        resolve(data);
-      })
-      .catch((error) => {
-        console.error(error);
-        reject(error);
-      })
-      .finally(() => s3Client.destroy());
-  });
-};
-
-const putObject = async (bucket: string, file: Buffer, key: string) => {
-  const s3Client = new S3Client({
-    endpoint: "https://s3.dualstack.us-east-1.amazonaws.com",
-    forcePathStyle: false,
-    region: "us-east-1",
-    credentials,
+    region: "us-east-1"
   });
 
   const params = {

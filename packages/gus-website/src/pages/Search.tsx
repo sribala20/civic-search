@@ -1,8 +1,11 @@
+import { useState } from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "../styles.css";
 
 const Search = () => {
+  const [searchResults, setSearchResults] = useState([]);
+
   const handleSearch = (e: any) => {
     console.log("Searching...");
 
@@ -21,20 +24,21 @@ const Search = () => {
 
     console.log(formData);
 
-    const options = {
+    fetch("http://localhost:8000/retrieve", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(formData),
-    };
-
-    fetch("/api/v1/search/request", options)
+      body: JSON.stringify({
+        text: JSON.stringify(formData),
+      }),
+    })
+      .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        setSearchResults(data);
       })
-      .catch((err) => {
-        console.error(err);
+      .catch((error) => {
+        console.log(JSON.stringify(error));
       });
   };
 
@@ -45,7 +49,6 @@ const Search = () => {
         <div className="search-page">
           <h1>Request for Public Records</h1>
           <div className="form-container">
-            <form>
               <div className="input-group">
                 <label htmlFor="name">Name:</label>
                 <input type="text" id="name" placeholder="Last, First" />
@@ -77,13 +80,21 @@ const Search = () => {
                 <h2>Record Information:</h2>
                 <textarea placeholder="List the records you are requesting. Specify relevant information such as: subject, title, location, address, person(s) involved, project name, etc."></textarea>
               </div>
-              <button type="submit" onClick={handleSearch}>
+              <button onClick={handleSearch}>
                 Submit Request
               </button>
-            </form>
           </div>
         </div>
       </div>
+      <div style={{ marginTop: "20px" }}>
+            {searchResults &&
+              searchResults.map((result, index) => (
+                <div key={index} style={{ marginBottom: "10px", whiteSpace: "pre-wrap" }}>
+                  <p>{result}</p>
+                  <hr />
+                </div>
+              ))}
+          </div>
       <Footer />
     </div>
   );
