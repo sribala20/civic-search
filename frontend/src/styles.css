@@ -1,0 +1,25 @@
+/* styles.css */
+
+.navbar {
+  margin-left: 100px;
+}
+
+.margin-30 {
+  margin: 30px;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.width-200 {
+  width: 200px;
+}
+
+.width-300 {
+  width: 300px;
+}
+
+.form-control-w-75 {
+  width: 75%;
+}
