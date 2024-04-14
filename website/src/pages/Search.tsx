@@ -3,6 +3,41 @@ import Navbar from "../components/Navbar";
 import "../styles.css";
 
 const Search = () => {
+  const handleSearch = (e: any) => {
+    console.log("Searching...");
+
+    const formData = {
+      name: e.target.elements.name.value,
+      address: e.target.elements.address.value,
+      city: e.target.elements.city.value,
+      state: e.target.elements.state.value,
+      zip: e.target.elements.zip.value,
+      email: e.target.elements.email.value,
+      phone: e.target.elements.phone.value,
+      type: e.target.elements.type.value,
+      incidentNumber: e.target.elements.incidentNumber.value,
+      recordInfo: e.target.elements.recordInfo.value,
+    };
+
+    console.log(formData);
+
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    };
+
+    fetch("/api/v1/search/request", options)
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  };
+
   return (
     <div className="page-container">
       <div className="content-wrap">
@@ -42,7 +77,9 @@ const Search = () => {
                 <h2>Record Information:</h2>
                 <textarea placeholder="List the records you are requesting. Specify relevant information such as: subject, title, location, address, person(s) involved, project name, etc."></textarea>
               </div>
-              <button type="submit">Submit Request</button>
+              <button type="submit" onClick={handleSearch}>
+                Submit Request
+              </button>
             </form>
           </div>
         </div>
