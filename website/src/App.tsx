@@ -4,6 +4,7 @@ import "./App.css";
 import Landing from "./pages/Landing";
 import Query from "./pages/Query";
 import Search from "./pages/Search";
+import Upload from "./pages/Upload";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/search" element={<Search />} />
           <Route path="/query" element={<Query />} />
+          <Route path="/upload" element={<Upload />} />
         </Routes>
       </Router>
     </div>

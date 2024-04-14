@@ -17,6 +17,9 @@ const Navbar = () => {
           <a href="/query" className="active">
             General Request
           </a>
+          <a href="/upload" className="active">
+            Upload Documents
+          </a>
         </li>
       </ul>
     </nav>

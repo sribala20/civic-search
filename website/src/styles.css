@@ -301,3 +301,54 @@ button[type="submit"]:hover {
   background-color: #0c2b58;
   color: #fff;
 }
+
+/* Upload Page Styles */
+.upload-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.upload-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0c2b58;
+}
+
+.upload-page .form-container {
+  padding: 30px;
+}
+
+.upload-page .input-group {
+  margin-bottom: 30px;
+}
+
+.upload-page label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #0c2b58;
+}
+
+.upload-page input[type="file"] {
+  margin-top: 10px;
+}
+
+.upload-page button[type="submit"] {
+  background-color: #ffd119;
+  color: #0c2b58;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.upload-page button[type="submit"]:hover {
+  background-color: #0c2b58;
+  color: #fff;
+}
