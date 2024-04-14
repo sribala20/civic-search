@@ -71,6 +71,10 @@ body {
   color: #fff; /* Dark text on hover */
 }
 
+.spacer {
+  flex: 1;
+}
+
 /* Footer Styles */
 .footer {
   background-color: #0c2b58;
@@ -351,4 +355,109 @@ button[type="submit"]:hover {
 .upload-page button[type="submit"]:hover {
   background-color: #0c2b58;
   color: #fff;
+}
+
+/* Login Page Styles */
+.login-page {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0c2b58;
+}
+
+.login-page .form-container {
+  padding: 30px;
+}
+
+.login-page .input-group {
+  margin-bottom: 30px;
+}
+
+.login-page label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #0c2b58;
+}
+
+.login-page input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+.login-page button[type="submit"] {
+  background-color: #ffd119;
+  color: #0c2b58;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.login-page button[type="submit"]:hover {
+  background-color: #0c2b58;
+  color: #fff;
+}
+
+.login-page p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-page a {
+  color: #0c2b58;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-page a:hover {
+  text-decoration: underline;
+}
+
+/* No Permission Page Styles */
+.no-permission-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #f0f0f0;
+  min-height: 80vh;
+}
+
+.no-permission-page .content-section {
+  max-width: 600px;
+  text-align: center;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.no-permission-page h1 {
+  color: #0c2b58;
+  margin-bottom: 20px;
+}
+
+.no-permission-page p {
+  color: #555;
+  font-size: 18px;
+  line-height: 1.5;
 }

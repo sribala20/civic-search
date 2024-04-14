@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
+import { useAuth } from "../AuthContext";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "../styles.css";
 
 const LandingPage = () => {
+  const { loggedIn } = useAuth();
+
   return (
     <div className="page-container">
       <div className="content-wrap">
@@ -28,14 +31,16 @@ const LandingPage = () => {
               Obispo so special. Whether you're a visitor or a resident, our
               city is sure to capture your heart.
             </p>
-            <div className="button-container">
-              <Link to="/query" className="btn btn-primary">
-                General Information Request
-              </Link>
-              <Link to="/search" className="btn btn-primary">
-                Request for Public Records
-              </Link>
-            </div>
+            {loggedIn && (
+              <div className="button-container">
+                <Link to="/query" className="btn btn-primary">
+                  General Information Request
+                </Link>
+                <Link to="/search" className="btn btn-primary">
+                  Request for Public Records
+                </Link>
+              </div>
+            )}
           </div>
         </div>
       </div>
