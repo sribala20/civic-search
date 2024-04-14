@@ -4,9 +4,24 @@ import AdvSearch from "./pages/AdvSearch.jsx";
 import GenSearch from "./pages/GenSearch.jsx";
 import Upload from "./pages/Upload.jsx";
 import Results from "./pages/Results.jsx";
-import { backendRoot } from './AppConfig.jsx'
+import { backendRoot } from "./AppConfig.jsx";
 class App extends Component {
   render() {
+    function fetch_query() {
+      const search = "Tell me about parking regulations in downtown";
+      const encodedSearch = encodeURIComponent(username);
+      const url = `/search=${encodedSearch}`;
+      fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ search }),
+      })
+        .then((r) => r.json())
+        .then((data) => console.log(data));
+    }
+
     return (
       <Router>
         <Routes>
@@ -19,5 +34,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;
