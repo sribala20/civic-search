@@ -36,12 +36,17 @@ app.post("/retrieve", async (req, res) => {
 
   try {
     const response = await client.send(command);
-    const summaries = await Promise.all(response.retrievalResults.map(result => {
-      return generateContentFromJSON(result.content.text, req.body.text);
-    }));
+    const summaries = await Promise.all(
+      response.retrievalResults.map((result) => {
+        return generateContentFromJSON(result.content.text, req.body.text);
+      })
+    );
     
     const summariesWithMessage = summaries.map((summary, index) => {
-      return response.retrievalResults[index].location.s3Location.uri + ":\n" + summary;
+      const uri = response.retrievalResults[index].location.s3Location.uri;
+      const prefix = "s3://city-records-and-transcripts/CityClerk/";
+      const cleanedUri = uri.substring(prefix.length);
+      return "Laserfische Location: " + cleanedUri + ":\n" + summary;
     });
 
     res.json(summariesWithMessage);
