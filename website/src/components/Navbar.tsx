@@ -5,7 +5,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo-container">
-        <img src={logo} alt="City of San Luis Obispo" className="logo" />
+        <a href="/">
+          <img src={logo} alt="City of San Luis Obispo" className="logo" />
+        </a>
       </div>
       <ul className="nav-links">
         <li>

@@ -15,21 +15,23 @@ const Query = () => {
   };
 
   return (
-    <div>
-      <Navbar />
-      <div className="query-page">
-        <h1>General Information Request</h1>
-        <div className="form-container">
-          <form onSubmit={handleSubmit}>
-            <div className="input-group">
-              <textarea
-                placeholder="Enter your request here..."
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-              ></textarea>
-            </div>
-            <button type="submit">Submit Request</button>
-          </form>
+    <div className="page-container">
+      <div className="content-wrap">
+        <Navbar />
+        <div className="query-page">
+          <h1>General Information Request</h1>
+          <div className="form-container">
+            <form onSubmit={handleSubmit}>
+              <div className="input-group">
+                <textarea
+                  placeholder="Enter your request here..."
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                ></textarea>
+              </div>
+              <button type="submit">Submit Request</button>
+            </form>
+          </div>
         </div>
       </div>
       <Footer />

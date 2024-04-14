@@ -10,6 +10,20 @@ body {
   min-height: 100vh;
 }
 
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  flex: 1;
+}
+
+.navbar {
+  margin-top: auto;
+}
+
 /* Navbar Styles */
 .navbar {
   display: flex;
@@ -43,17 +57,18 @@ body {
 }
 
 .nav-links a {
-  color: #ffd119; /* Accent color */
+  background-color: #ffd119;
+  color: #0c2b58;
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 4px;
   transition: background-color 0.3s ease;
+  margin-right: 15px;
 }
 
-.nav-links a.active,
 .nav-links a:hover {
-  background-color: #ffd119; /* Light background on hover */
-  color: #0c2b58; /* Dark text on hover */
+  background-color: #0c2b58; /* Light background on hover */
+  color: #fff; /* Dark text on hover */
 }
 
 /* Footer Styles */
@@ -81,6 +96,74 @@ body {
 
 .footer-text p {
   margin: 10px 0;
+}
+
+/* Landing Page Styles */
+.landing-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  color: #0c2b58;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 20px;
+  color: #555;
+}
+
+.content-section {
+  max-width: 800px;
+  text-align: center;
+}
+
+.content-section h2 {
+  font-size: 32px;
+  color: #0c2b58;
+  margin-bottom: 20px;
+}
+
+.content-section p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #ffd119;
+  color: #0c2b58;
+}
+
+.btn-primary:hover {
+  background-color: #0c2b58;
+  color: #fff;
 }
 
 /* Search Page Styles */
@@ -147,7 +230,7 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #0c2b58; /* Dark background on hover */
-  color: #ffd119; /* Accent color on hover */
+  color: #fff; /* Accent color on hover */
 }
 
 /* Query Page Styles */
@@ -198,5 +281,5 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #0c2b58;
-  color: #ffd119;
+  color: #fff;
 }
