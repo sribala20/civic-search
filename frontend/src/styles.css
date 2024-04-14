@@ -1,25 +1,27 @@
-/* styles.css */
-
 .navbar {
-  margin-left: 100px;
+  margin-left: 0;
 }
 
 .margin-30 {
-  margin: 30px;
+  margin: 0;
 }
 
 .margin-bottom-20 {
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .width-200 {
-  width: 200px;
+  width: auto;
 }
 
 .width-300 {
-  width: 300px;
+  width: auto;
 }
 
 .form-control-w-75 {
-  width: 75%;
+  width: 100%;
+}
+
+.active {
+  font-weight: bold;
 }

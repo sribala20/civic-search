@@ -1,20 +1,23 @@
 import React from "react";
-import { ListGroup } from "react-bootstrap";
+import { Col, Container, ListGroup, Row } from "react-bootstrap";
 import SearchResult from "./SearchResult";
-import "./styles.css";
 
 function Results() {
   return (
-    <div className="margin-30">
-      <h3>Results</h3>
-      <ListGroup>
-        <SearchResult />
-        <SearchResult />
-        <SearchResult />
-        <SearchResult />
-        <SearchResult />
-      </ListGroup>
-    </div>
+    <Container>
+      <Row className="justify-content-center">
+        <Col md={8}>
+          <h3 className="mb-4">Results</h3>
+          <ListGroup>
+            <SearchResult />
+            <SearchResult />
+            <SearchResult />
+            <SearchResult />
+            <SearchResult />
+          </ListGroup>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
