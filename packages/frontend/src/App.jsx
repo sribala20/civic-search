@@ -4,7 +4,7 @@ import AdvSearch from "./pages/AdvSearch.jsx";
 import GenSearch from "./pages/GenSearch.jsx";
 import Upload from "./pages/Upload.jsx";
 import Results from "./pages/Results.jsx";
-
+import { backendRoot } from './AppConfig.jsx'
 class App extends Component {
   render() {
     return (
