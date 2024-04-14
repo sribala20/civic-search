@@ -1,7 +1,7 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 
-import { AuthProvider, useAuth } from "./AuthContext";
+import { AuthProvider } from "./AuthContext";
 
 import Landing from "./pages/Landing";
 import Login from "./pages/Login";
@@ -10,8 +10,6 @@ import Search from "./pages/Search";
 import Upload from "./pages/Upload";
 
 function App() {
-  const { loggedIn, admin } = useAuth();
-
   const ProtectedRoute = ({ children }: { children: JSX.Element }) => children;
 
   const AdminRoute = ({ children }: { children: JSX.Element }) => children;
