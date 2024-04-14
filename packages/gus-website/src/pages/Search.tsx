@@ -5,24 +5,20 @@ import "../styles.css";
 
 const Search = () => {
   const [searchResults, setSearchResults] = useState([]);
+  const [type, setType] = useState("");
+  const [incidentNumber, setIncidentNumber] = useState("");
+  const [recordInfo, setRecordInfo] = useState("");
 
-  const handleSearch = (e: any) => {
+  const handleSearch = () => {
     console.log("Searching...");
 
     const formData = {
-      name: e.target.elements.name.value,
-      address: e.target.elements.address.value,
-      city: e.target.elements.city.value,
-      state: e.target.elements.state.value,
-      zip: e.target.elements.zip.value,
-      email: e.target.elements.email.value,
-      phone: e.target.elements.phone.value,
-      type: e.target.elements.type.value,
-      incidentNumber: e.target.elements.incidentNumber.value,
-      recordInfo: e.target.elements.recordInfo.value,
+      type,
+      incidentNumber,
+      recordInfo,
     };
 
-    console.log(formData);
+    console.log(JSON.stringify(formData));
 
     fetch("http://localhost:8000/retrieve", {
       method: "POST",
@@ -30,7 +26,7 @@ const Search = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        text: JSON.stringify(formData),
+        text: `public record type is ${type}, incident number is ${incidentNumber}, additional record info is ${recordInfo}`,
       }),
     })
       .then((response) => response.json())
@@ -49,52 +45,48 @@ const Search = () => {
         <div className="search-page">
           <h1>Request for Public Records</h1>
           <div className="form-container">
-              <div className="input-group">
-                <label htmlFor="name">Name:</label>
-                <input type="text" id="name" placeholder="Last, First" />
-              </div>
-              <div className="input-group">
-                <label htmlFor="address">Address:</label>
-                <input type="text" id="address" placeholder="Street & Unit #" />
-                <input type="text" id="city" placeholder="City" />
-                <input type="text" id="state" placeholder="State" />
-                <input type="text" id="zip" placeholder="Zip" />
-              </div>
-              <div className="input-group">
-                <label htmlFor="email">Email:</label>
-                <input type="email" id="email" placeholder="Email" />
-                <label htmlFor="phone">Phone:</label>
-                <input type="tel" id="phone" placeholder="Phone" />
-              </div>
-              <div className="input-group">
-                <label htmlFor="type">Type:</label>
-                <input type="text" id="type" placeholder="Type" />
-                <label htmlFor="incidentNumber">Incident Number:</label>
-                <input
-                  type="text"
-                  id="incidentNumber"
-                  placeholder="Incident Number"
-                />
-              </div>
-              <div className="record-info">
-                <h2>Record Information:</h2>
-                <textarea placeholder="List the records you are requesting. Specify relevant information such as: subject, title, location, address, person(s) involved, project name, etc."></textarea>
-              </div>
-              <button onClick={handleSearch}>
-                Submit Request
-              </button>
+            <div className="input-group">
+              <label htmlFor="type">Type:</label>
+              <input
+                type="text"
+                id="type"
+                placeholder="Type"
+                value={type}
+                onChange={(e) => setType(e.target.value)}
+              />
+              <label htmlFor="incidentNumber">Incident Number:</label>
+              <input
+                type="text"
+                id="incidentNumber"
+                placeholder="Incident Number"
+                value={incidentNumber}
+                onChange={(e) => setIncidentNumber(e.target.value)}
+              />
+            </div>
+            <div className="record-info">
+              <h2>Record Information:</h2>
+              <textarea
+                placeholder="List the records you are requesting. Specify relevant information such as: subject, title, location, address, person(s) involved, project name, etc."
+                value={recordInfo}
+                onChange={(e) => setRecordInfo(e.target.value)}
+              ></textarea>
+            </div>
+            <button onClick={handleSearch}>Submit Request</button>
           </div>
         </div>
       </div>
       <div style={{ marginTop: "20px" }}>
-            {searchResults &&
-              searchResults.map((result, index) => (
-                <div key={index} style={{ marginBottom: "10px", whiteSpace: "pre-wrap" }}>
-                  <p>{result}</p>
-                  <hr />
-                </div>
-              ))}
-          </div>
+        {searchResults &&
+          searchResults.map((result, index) => (
+            <div
+              key={index}
+              style={{ marginBottom: "10px", whiteSpace: "pre-wrap" }}
+            >
+              <p>{result}</p>
+              <hr />
+            </div>
+          ))}
+      </div>
       <Footer />
     </div>
   );
