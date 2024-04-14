@@ -16,18 +16,18 @@ function GenSearch() {
     fetch("http://localhost:8000/retrieve", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        text: searchText
-      })
+        text: searchText,
+      }),
     })
-      .then(response => response.json())
-      .then(data => {
+      .then((response) => response.json())
+      .then((data) => {
         setSearchResults(data.retrievalResults); // Update the search results state with the fetched data
       })
-      .catch(error => {
-        console.log(error);
+      .catch((error) => {
+        console.log(JSON.stringify(error));
       });
   };
 
@@ -35,7 +35,9 @@ function GenSearch() {
     <>
       <NavBar />
       <div style={containerStyle}>
-        <div style={{ margin: "30px", display: "flex", flexDirection: "column" }}>
+        <div
+          style={{ margin: "30px", display: "flex", flexDirection: "column" }}
+        >
           <h3>General Search</h3>
           <h5>Prompt</h5>
           <textarea
@@ -55,12 +57,13 @@ function GenSearch() {
             Search
           </button>
           <div style={{ marginTop: "20px" }}>
-            {searchResults && searchResults.map((result, index) => (
-              <div key={index} style={{ marginBottom: "10px" }}>
-                <h5>{result.location.s3Location.uri}</h5>
-                <p>{result.content.text}</p>
-              </div>
-            ))}
+            {searchResults &&
+              searchResults.map((result, index) => (
+                <div key={index} style={{ marginBottom: "10px" }}>
+                  <h5>{result.location.s3Location.uri}</h5>
+                  <p>{result.content.text}</p>
+                </div>
+              ))}
           </div>
         </div>
       </div>

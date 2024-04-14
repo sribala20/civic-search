@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@anthropic-ai/bedrock-sdk": "^0.9.6",
     "@aws-sdk/client-bedrock-agent-runtime": "^3.554.0",
     "aws-sdk": "^2.1599.0",
     "body-parser": "^1.20.2",

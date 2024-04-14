@@ -9,14 +9,14 @@ class App extends Component {
   render() {
     function fetch_query() {
       const search = "Tell me about parking regulations in downtown";
-      const encodedSearch = encodeURIComponent(username);
-      const url = `/search=${encodedSearch}`;
+      //const encodedSearch = encodeURIComponent(search);
+      const url = `${backendRoot}/retrieve`;
       fetch(url, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ search }),
+        body: JSON.stringify({ text: search }),
       })
         .then((r) => r.json())
         .then((data) => console.log(data));

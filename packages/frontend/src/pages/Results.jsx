@@ -7,13 +7,13 @@ function Results() {
       <NavBar />
       <div style={{ margin: "30px", display: "flex", flexDirection: "column" }}>
         <h3>Results</h3>
-            <ol>
-                <SearchResults />
-                <SearchResults />
-                <SearchResults />
-                <SearchResults />
-                <SearchResults />
-            </ol>
+        <ol>
+          <SearchResults />
+          <SearchResults />
+          <SearchResults />
+          <SearchResults />
+          <SearchResults />
+        </ol>
       </div>
     </>
   );
