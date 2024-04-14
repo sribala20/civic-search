@@ -461,3 +461,29 @@ button[type="submit"]:hover {
   font-size: 18px;
   line-height: 1.5;
 }
+
+.document-result {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.document-title {
+  color: #0c2b58;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.document-location {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.document-description {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+}
