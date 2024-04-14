@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333; /* Adjusted text color for better readability */
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+  /* background-color: #ffd119; Accent color */
+  color: #0c2b58; /* Dark background */
+  padding: 10px 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #ffd119; /* Accent color */
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  background-color: #ffd119; /* Light background on hover */
+  color: #0c2b58; /* Dark text on hover */
+}
+
+/* Search Page Styles */
+.search-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0c2b58;
+}
+
+.form-container {
+  padding: 30px;
+}
+
+.input-group {
+  margin-bottom: 30px; /* Increased spacing between input groups */
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px; /* Increased spacing between labels and inputs */
+  color: #0c2b58;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px; /* Increased padding for better touch interaction */
+  border: 2px solid #ccc; /* Thicker borders */
+  border-radius: 8px; /* Rounder corners */
+  font-size: 16px;
+  margin-top: 6px; /* Adjusted spacing between inputs */
+  margin-bottom: 10px;
+}
+
+textarea {
+  height: 200px; /* Increased height for better readability */
+  resize: vertical;
+}
+
+.record-info {
+  margin-bottom: 30px;
+}
+
+button[type="submit"] {
+  background-color: #ffd119; /* Accent color */
+  color: #0c2b58; /* Dark text */
+  border: none;
+  padding: 12px 24px; /* Increased padding */
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0c2b58; /* Dark background on hover */
+  color: #ffd119; /* Accent color on hover */
+}
