@@ -36,12 +36,15 @@ app.post("/retrieve", async (req, res) => {
 
   try {
     const response = await client.send(command);
-    console.log(req.body.text);
-    generateContentFromJSON(
-      response.retrievalResults[0].context.text,
-      req.body.text
-    );
-    res.json(response);
+    const summaries = await Promise.all(response.retrievalResults.map(result => {
+      return generateContentFromJSON(result.content.text, req.body.text);
+    }));
+    
+    const summariesWithMessage = summaries.map((summary, index) => {
+      return response.retrievalResults[index].location.s3Location.uri + ":\n" + summary;
+    });
+
+    res.json(summariesWithMessage);
   } catch (error) {
     res.status(500).json({ error: error.toString() });
   }

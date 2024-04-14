@@ -6,11 +6,11 @@ function GenSearch() {
     backgroundColor: "#F3F2F2",
     padding: "20px",
     borderRadius: "10px",
-    boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)", // Adding a light shadow for depth
+    boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
   };
 
-  const [searchText, setSearchText] = useState(""); // State to hold the search text
-  const [searchResults, setSearchResults] = useState(); // State to hold the search results
+  const [searchText, setSearchText] = useState("");
+  const [searchResults, setSearchResults] = useState();
 
   const handleSearch = () => {
     fetch("http://localhost:8000/retrieve", {
@@ -24,7 +24,7 @@ function GenSearch() {
     })
       .then((response) => response.json())
       .then((data) => {
-        setSearchResults(data.retrievalResults); // Update the search results state with the fetched data
+        setSearchResults(data);
       })
       .catch((error) => {
         console.log(JSON.stringify(error));
@@ -59,9 +59,9 @@ function GenSearch() {
           <div style={{ marginTop: "20px" }}>
             {searchResults &&
               searchResults.map((result, index) => (
-                <div key={index} style={{ marginBottom: "10px" }}>
-                  <h5>{result.location.s3Location.uri}</h5>
-                  <p>{result.content.text}</p>
+                <div key={index} style={{ marginBottom: "10px", whiteSpace: "pre-wrap" }}>
+                  <p>{result}</p>
+                  <hr />
                 </div>
               ))}
           </div>
