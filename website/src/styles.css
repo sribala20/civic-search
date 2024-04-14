@@ -106,17 +106,35 @@ body {
   justify-content: center;
   align-items: center;
   padding: 40px;
+  background-image: url("./assets/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  min-height: 80vh; /* Add this line */
 }
 
-.hero-section {
-  text-align: center;
-  margin-bottom: 40px;
+.landing-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Adjust the opacity as desired */
+  z-index: -1;
 }
 
-.hero-section h1 {
-  font-size: 48px;
-  color: #0c2b58;
-  margin-bottom: 20px;
+.hero-section,
+.content-section {
+  /* Add this line to make the text more readable */
+  color: #333;
 }
 
 .hero-section p {
