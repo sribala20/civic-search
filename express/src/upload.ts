@@ -16,8 +16,8 @@ import { UUID } from "crypto";
 import fs from "fs";
 
 const credentials = {
-  accessKeyId: "AKIAY2KA5QFED2EFQVDO",
-  secretAccessKey: "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",
+  accessKeyId: process.env.ACCESS_KEY_ID,
+  secretAccessKey: process.env.SECRET_ACCESS_KEY,
 };
 
 const createUUID = () => {
