@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "../styles.css";
 
@@ -44,6 +45,7 @@ const Search = () => {
           </form>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

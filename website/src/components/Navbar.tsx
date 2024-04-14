@@ -12,6 +12,9 @@ const Navbar = () => {
           <a href="/search" className="active">
             Search
           </a>
+          <a href="/query" className="active">
+            General Request
+          </a>
         </li>
       </ul>
     </nav>
