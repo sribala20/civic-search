@@ -1,4 +1,4 @@
-# Civic Search
+# Civic Search - 1st Place @ DX Digital Transformation Hackathon 2024: Civic Service
 
 Civic Search is a revolutionary engine designed to solve real-world problems by consolidating scattered data into one accessible platform and simplifying the retrieval process with AI assistance.
 
@@ -25,5 +25,3 @@ Utilize AI to discover the most relevant documents and receive concise summaries
 1. Sign up for an account on Civic Search.
 2. Upload your data into the platform.
 3. Start searching and let the AI assist you in finding the information you need.
-
-### Digital Transformation Hackathon 2024: Civic Service
