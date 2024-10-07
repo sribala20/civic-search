@@ -1,4 +1,4 @@
-# Civic Search - 1st Place @ DX Digital Transformation Hackathon 2024: Civic Service
+# [Civic Search - 1st Place @ DX Digital Transformation Hackathon 2024: Civic Service](https://dxhub.calpoly.edu/hackathon/#:~:text=Winning%20Teams-,%231%20%3A%20Civic%20Search,-The%20Problem)
 
 Civic Search is a revolutionary engine designed to solve real-world problems by consolidating scattered data into one accessible platform and simplifying the retrieval process with AI assistance.
 
